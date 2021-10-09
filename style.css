@@ -24,15 +24,14 @@ body {
 .header-h1 {
   font-family: 'Butcherman', cursive;
   color: #e36414;
-  font-size: 300%;
+  font-size: 400%;
   text-align: center;
-  margin: .5em;
-  padding-top:.4em;
 }
 
 .header-h2 {
   font-family: 'Butcherman', cursive;
   color: #e36414;
+  font-size: 1.5em;
   text-align: center;
 }
 /*header styles END*/
@@ -55,6 +54,16 @@ body {
   font-size: 1.6em;
 }
 
+ul {
+  list-style: none;
+}
+
+.body-h2 {
+  font-family: 'Creepster', cursive;
+  font-size: 3em;
+  color: #e36414;
+}
+
 /*footer style*/
 .flexbox-container-footer {
   display: flex;
@@ -64,7 +73,7 @@ body {
   align-content: space-around;
 }
 
-.flexbox-item-footer {
+.flex-one {
   background-color: rgba(95, 15, 64, .5);
   width: 100%;
   display: flex;
