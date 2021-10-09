@@ -5,40 +5,15 @@ body {
 }
 
 /*header styles*/
-.flexbox-container-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
+.col{
+  text-align: center;
+  margin: .5em;
 }
 
-.flex-header-one, .flex-header-three {
-  background-color: rgba(95, 15, 64, .5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-header-two {
+.header-bg-color {
   background-color: rgba(95, 15, 64, .5);
 }
-
-.flex-header-one{
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.flex-header-two {
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.flex-header-three {
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
+  
 .header-img {
   padding: 1em;
   width: 200px;
@@ -63,24 +38,8 @@ body {
 /*header styles END*/
 
 /*body container styles*/
-
-.flexbox-container-body {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
-}
-
-.flexbox-item-body {
-  height: 100%;
-  width: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.row {
   margin: .5em;
-  padding: .5em;
 }
 
 .card-img {
@@ -88,16 +47,6 @@ body {
   width: 200px;
   height: 200px;
   opacity: .7;
-}
-
-.flex-body-one {
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-
-.flex-body-two {
-  flex-grow: 1;
-  flex-shrink: 0;
 }
 
 .body-p, .body-ul {
