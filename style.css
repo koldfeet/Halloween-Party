@@ -26,8 +26,6 @@ body {
   color: #e36414;
   font-size: 300%;
   text-align: center;
-  margin: .5em;
-  padding-top:.4em;
 }
 
 .header-h2 {
@@ -64,7 +62,7 @@ body {
   align-content: space-around;
 }
 
-.flexbox-item-footer {
+.flex-one {
   background-color: rgba(95, 15, 64, .5);
   width: 100%;
   display: flex;
