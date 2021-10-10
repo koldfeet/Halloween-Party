@@ -4,6 +4,105 @@ body {
   background-size: cover;
 }
 
+/*Animation start here*/
+.spider-animation-two {
+  position: absolute;
+  z-index: 1;
+  animation-name: mySpiderTwo;
+  -moz-animation-name: mySpiderTwo;
+  animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  animation-duration: 10s;
+  -moz-animation-duration: 10s;
+  animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@keyframes mySpiderTwo {
+  0%   {transform: translateY(0);}
+  25%  {transform: translateY(50%);}
+  50%  {transform: translateY(20%);}
+  100% {transform: translateX(-190%);}
+}
+
+.ghost-img {
+  width: 120px;
+  position: absolute;
+  animation-name: myGhost;
+  -moz-animation-name: myGhost;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-duration: 15s;
+  -moz-animation-duration: 15s;
+  animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@keyframes myGhost {
+  0%   {transform: translateY(0);}
+  25%  {transform: translateY(100%);}
+  50%  {transform: translateX(80%);}
+  100% {transform: translateX(90%);}
+}
+.ghost-two-img {
+  width: 100px;
+  position: absolute;
+  animation-name: myGhostTwo;
+  -moz-animation-name: myGhostTwo;
+  animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-duration: 8s;
+  -moz-animation-duration: 8s;
+  animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@keyframes myGhostTwo {
+  0%   {transform: translateX(0);}
+  25%  {transform: translateX(-170%);}
+  50%  {transform: translateX(-150%);}
+  100% {transform: translateY(160%);}
+}
+
+.ghost-three-img {
+  width: 80px;
+  position: absolute;
+  animation-name: myGhostThree;
+  -moz-animation-name: myGhostThree;
+  animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-duration: 12s;
+  -moz-animation-duration: 12s;
+  animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@keyframes myGhostThree {
+  0%   {transform: translateY(0);}
+  25%  {transform: translateY(-130%);}
+  50%  {transform: translateY(110%);}
+  100% {transform: translateX(-120%);}
+}
+/*Animation END here*/
+
 /*header styles*/
 .col{
   text-align: center;
