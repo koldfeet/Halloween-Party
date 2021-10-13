@@ -4,6 +4,35 @@ body {
   background-size: cover;
 }
 
+/*Dropdown START*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(95, 15, 64, .5);
+  min-width: 160px;
+  padding: 12px 16px;
+  margin: 10px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-wrap {
+  text-align: center;
+}
+
+.dropdown {
+  padding: 10px;
+}
+/*Dropdown END*/
+
 /*Animation start here*/
 .spider-animation-two {
   position: absolute;
