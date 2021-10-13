@@ -4,34 +4,67 @@ body {
   background-size: cover;
 }
 
-/*Dropdown START*/
+/*Dropdown menu START*/
+.dropbtn {
+  background-color: #b33d19;
+  color: white;
+  padding: 13px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover a {
+  text-decoration: none;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
+  margin: .5em;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(95, 15, 64, .5);
+  background-color: #f9f9f9;
   min-width: 160px;
-  padding: 12px 16px;
-  margin: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown-wrap {
-  text-align: center;
+.dropdown:hover .dropbtn {
+  background-color: #b33d19;
 }
 
-.dropdown {
-  padding: 10px;
+/*Dropdown menu END*/
+
+/* header nav CSS START*/
+nav {
+  display: flex;
+  justify-content: center;
 }
-/*Dropdown END*/
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/* header nav CSS END*/
 
 /*Animation start here*/
 .spider-animation-two {
@@ -42,10 +75,10 @@ body {
   animation-delay: 1s;
   -moz-animation-delay: 1s;
   animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  animation-duration: 10s;
-  -moz-animation-duration: 10s;
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-duration: 25s;
+  -moz-animation-duration: 25s;
   animation-direction: alternate;
   -moz-animation-direction: alternate;
   animation-timing-function: linear;
@@ -149,12 +182,18 @@ body {
   opacity: .5;
 }
 
-.header-h1 {
+/*H1 header animation START*/
+.animate__animated {
   font-family: 'Butcherman', cursive;
   color: #e36414;
   font-size: 400%;
   text-align: center;
 }
+
+.my-element {
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+}
+/*H1 header animation END*/
 
 .header-h2 {
   font-family: 'Butcherman', cursive;
@@ -192,7 +231,7 @@ ul {
   color: #e36414;
 }
 
-/*footer style*/
+/*footer style START*/
 .flexbox-container-footer {
   display: flex;
   flex-direction: row;
@@ -216,6 +255,8 @@ ul {
   font-family: 'Creepster', cursive;
   font-size: 20px;
 }
+/*footer style END*/
+
 .scale,.translateY,.skew,.threeD,.translateX,.rotate,.hover{
     transition-delay: 0.01s;
     transition-duration: 2s;
@@ -227,3 +268,4 @@ ul {
 .translateY:hover{
     transform: translateY(50px);
 }
+
