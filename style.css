@@ -188,7 +188,7 @@ ul {
   font-size: 20px;
 }
 .scale,.translateY,.skew,.threeD,.translateX,.rotate,.hover{
-    transition-delay: 2s;
+    transition-delay: 0.01s;
     transition-duration: 2s;
     transition-timing-function: ease-out;
 }
