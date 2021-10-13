@@ -216,3 +216,14 @@ ul {
   font-family: 'Creepster', cursive;
   font-size: 20px;
 }
+.scale,.translateY,.skew,.threeD,.translateX,.rotate,.hover{
+    transition-delay: 0.01s;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+.threeD:hover{
+    transform: rotate3d(5, 5, 5, 360deg);
+}
+.translateY:hover{
+    transform: translateY(50px);
+}
